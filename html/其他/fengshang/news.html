@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>风尚官网-动态</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="framework/Swiper-3.4.2/css/swiper.css" />
+		<link rel="stylesheet" href="resources/icon1/iconfont.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="resources/icon/iconfont.js"></script>
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  /*background: -webkit-linear-gradient(right, #BE93C5 , #7BC6CC);*/
+  /*background: linear-gradient(to left, #BE93C5 , #7BC6CC);*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* _site-header.css */
+.site-header {
+  text-align: center;
+  padding: 40px 0;
+
+}
+.site-header__title {
+  font-size: 36px;
+  color: #fff;
+}
+
+/* _wrapper.css */
+.wrapper {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* _timeline.css */
+.timeline {
+  position: relative;
+  margin: 30px auto;
+  padding: 60px 0;
+
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 4px;
+  height: 100%;
+  background-color: #8d94b1;
+}
+
+
+
+@media (min-width: 800px){
+  .timeline::before{
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+.timeline__item {
+  margin-bottom: 100px;
+  position: relative;
+}
+.timeline__item::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.timeline__item:nth-child(n) .timeline__item__content {
+  text-align: right;
+}
+.timeline__item:nth-child(2n) .timeline__item__content {
+  float: right;
+  text-align: left;
+}
+.timeline__item:nth-child(2n) .timeline__item__content::before {
+  content: '';
+  right: 40%;
+}
+@media (min-width: 800px){
+		
+.timeline__item:nth-child(2n) .timeline__item__content::before{
+    left: inherit;
+  }
+}
+.timeline__item:nth-child(2n) .timeline__item__content__date {
+  /*background-color: #b292c5;*/
+}
+.timeline__item:nth-child(2n) .timeline__item__content__title{
+  color: black;
+}
+.timeline__item:nth-child(2n) .timeline__item__content__description {
+  color: #959595;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__item-bg {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  color: #fff;
+}
+.timeline__item-bg:nth-child(2n) .timeline__item__station {
+  background-color: white;
+}
+.timeline__item-bg:nth-child(2n) .timeline__item__content {
+  /*background-color: #b292c5;*/
+}
+.timeline__item-bg:nth-child(2n) .timeline__item__content::before {
+  /*background-color: #b292c5;*/
+}
+
+.timeline__item-bg:nth-child(2n) .timeline__item__content__title{
+	color: black;
+}
+
+.timeline__item-bg:nth-child(2n) .timeline__item__content__description {
+  color: #959595;
+}
+.timeline__item-bg .timeline__item__station {
+  background-color: white;
+}
+.timeline__item-bg .timeline__item__content {
+  /*background-color: #65adb7;*/
+}
+.timeline__item-bg .timeline__item__content::before {
+  /*background-color: #65adb7;*/
+}
+
+.timeline__item-bg .timeline__item__content__title{
+  background-color: back;
+}
+
+.timeline__item-bg .timeline__item__content__description {
+  color: #959595;
+}
+.timeline__item__station {
+  background-color: #9aa0b9;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  top: 0;
+  left: 10%;
+  margin-left: -33px;
+  border: 4px solid #8d94b1;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+@media (min-width: 800px){
+.timeline__item__station{
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    border-width: 6px;
+  }
+}
+.timeline__item__content {
+  width: 80%;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  float: right;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  cursor: pointer;
+}
+@media (min-width: 800px){
+  .timeline__item__content{
+    width: 40%;
+    float: inherit;
+    padding: 30px 40px;
+    cursor: pointer;
+  }
+}
+.timeline__item__content::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  background: #8d94b1;
+  top: 20px;
+  width: 10%;
+  height: 4px;
+  z-index: -1;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+@media (min-width: 800px){
+.timeline__item__content::before{
+    left: 40%;
+    top: 30px;
+    height: 4px;
+    margin-top: -2px;
+  }
+}
+.timeline__item__content__date {
+  margin: 0;
+  padding: 0px 12px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  /*background-color: #65adb7;*/
+  color: #959595;
+  display: inline-block;
+  /*border-radius: 4px;*/
+  /*border: 2px solid #fff;*/
+}
+
+.timeline__item__content__title{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: black;
+}
+
+.timeline__item__content__description {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #959595;
+}
+@media (min-width: 800px){
+	
+.timeline__item__content__title{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}	
+	
+.timeline__item__content__description{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 800px){
+.timeline__item:nth-child(n) .timeline__item__content {
+  text-align: left;
+}
+}
+
+/* _site-footer.css */
+.site-footer {
+  padding: 50px 0 200px 0;
+
+}
+.site-footer__text {
+  color: #e6e6e6;
+  font-size: 14px;
+  text-align: center;
+}
+.site-footer__text__link {
+  color: #8287a9;
+}
+.timeline__item:nth-child(n) .timeline__item__content {
+  
+}
+
+</style>
+	</head>
+	<body id="news">
+		<div id="header">
+			<nav id="navbar">
+				<a href="index.html">
+					<h1 class="logo">
+			     	
+			        </h1>
+				</a>
+				
+			<ul class="list">
+				<li><a href="view-detail.html">服务</a></li>
+				<li><a href="news.html" class="active">动态</a></li>
+				<li><a href="case.html">案例</a></li>
+				<li><a href="about.html">了解</a></li>
+				<li><a href="contact.html">联系</a></li>			
+			</ul>
+			       
+		    </nav>
+		</div>
+		
+		<div style="background: #FFFFFF; width: 100%;height: 80px;">
+				
+		</div>
+		
+		<div class="main">
+			<div class="text-box">
+        		<p class="p1">最新动态</p>
+        	    <p class="p2">lately News</p>
+            	<p class="p3">wwwww</p>
+            </div> 
+		
+			<section class="timeline">
+			  <div class="wrapper">
+			    <div class="timeline__item timeline__item--0" style="">
+			      <div class="timeline__item__station"></div>
+			      <div class="timeline__item__content">
+			        <h2 class="timeline__item__content__date">2017-08-25</h2>
+			        <h2 class="timeline__item__content__title">深信服官网升级项目</h2>    
+			        <p class="timeline__item__content__description">在与深信服达成年度合作之后，由深圳网站设计公司Clh负责的深信服官网优化项目现已上线，此次优化主要是针对官网首页的内容进行整改由于公司业务体系的变化，现在直接按照大的类别去区别企业的服务内容，集合热门产品，用户搜索，解决方案推荐在首页展示</p>
+			        <img src="img/news_01.jpg"/ style="width: 60%;height: 40%; display: inline-block;margin-top: 10px;">
+			      </div>
+			    </div>
+			    <div class="timeline__item timeline__item--1">
+			      <div class="timeline__item__station"></div>
+			      <div class="timeline__item__content">
+			        <h2 class="timeline__item__content__date">2017-08-16</h2>
+			        <h2 class="timeline__item__content__title">周大福金粒/条预定平台</h2>    
+			        <p class="timeline__item__content__description">为了更好地了解大疆创新（DJI），在项目前期，我们研究了DJI是如何通过广告创意设计向消费者传递品牌形象和产品特质的，并对本次设计京东商城产品页面的项目做了分析，不仅对产品的核心诉求进行了解，还需遵循基本设计理念，提供良好的用户体验</p>
+			        <img src="img/news_02.jpg"/ style="width: 60%;height: 40%; display: inline-block;margin-top: 10px;">
+			      </div>
+			    </div>
+			    <div class="timeline__item timeline__item--2">
+			      <div class="timeline__item__station"></div>
+			      <div class="timeline__item__content">
+			        <h2 class="timeline__item__content__date">2017-08-16</h2>
+			        <h2 class="timeline__item__content__title">multifun美铂林国际站上线！</h2>    
+			        <p class="timeline__item__content__description">美铂林公司拥有强大的智能手机周边配件的研发团队及顶尖素养的设计专才，公司以人为本，开放创新为研发管理的基石，全方位多角度地服务于客户，以用户需求为导向，驱动研发团队的不断进步和创新</p>
+			        <img src="img/news_01.jpg"/ style="width: 60%;height: 40%; display: inline-block;margin-top: 10px;">
+			      </div>
+			    </div>
+			
+			</section>
+</div>
+		
+
+	    
+		 <div id="footer">
+
+               <div class="container"  > 
+	               <div class="left" >
+	               	   <img src="img/QRcode.png"/>
+	               	   <p class="p1">微信</p>
+	               </div>
+	               <div class="right">
+	                   <p class="p1">0757-82291211</p>
+                   	   <p class="p2"><span>QQ：2812638051</span><span style="padding-left: 20px;">Fax：0757-82701003</span></p>
+                   	   <p class="p2">地址：广东省佛山市禅城区季华西路133号金盈绿岛国际中心A2座14楼</p>
+                   	   <p class="p2"><span>备案号：粤XXXXXXX</span><span style="padding-left: 20px;">佛山千思寻广告有限公司 2017  版权所有</span> </p>  	
+	                </div>
+                   	 
+                </div>
+           
+         </div>
+	    
+	   
+
+
+		
+	
+	<script type="text/javascript" src="framework/Swiper-3.4.2/js/swiper.jquery.min.js"></script>
+	<script>
+		$(window).load(function(){
+			$(".wrapper .timeline__item__content").click(function(){
+			  location.href="news-detail.html";
+			})
+		})
+	</script>
+          
+	</body>
+</html>

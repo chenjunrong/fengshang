@@ -1,0 +1,942 @@
+body,p,ul,li,h1,h2,h3,figure{
+	margin: 0;
+	padding: 0;
+	line-height: 1.1;
+}
+body {
+	background-color: #f6f6f6;
+	font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+input{
+	outline: none;
+}
+ul,ol {
+	list-style: outside none none;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+a:hover{
+	text-decoration: none;
+}
+.clearfix:after {
+	content:".";  
+	height:0;  
+	visibility:hidden;  
+	display:block;  
+	clear:both;  
+}
+
+
+
+.header{
+	width: 100%;
+	height:1.14rem;
+	background: #ffffff;
+	position: relative;
+}
+.header img{
+	width: 3.07rem;
+	float: left;
+	margin-top: 0.095rem;
+    margin-left: 0.25rem;	
+}
+
+/*自定义工具栏*/
+.my-tools{
+	float: right;
+    margin-top: 0.34rem;
+    margin-right: 0.25rem;
+}
+.menu-tool{
+	color: #0c3178;
+	font-size: 0.47rem;
+    float: right;
+}
+.search-tool{
+	width: 2.36rem;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	float: right;
+	border: 1px solid #c5cedf;
+    border-radius: 0.12rem;
+    margin-right: 0.25rem;
+}
+.search-tool .iconfont{
+    text-align: center;
+	font-size: 0.3rem;
+	color: #d1d0d0;
+	width: 0.54rem;
+	height: 0.47rem;
+	line-height: 0.47rem;
+    float: left;
+}
+.search-tool .serarchInput{
+    width: 1.7rem;
+	height: 0.47rem;
+	line-height: 0.47rem;
+	border: 1px solid rgba(0,0,0,0);
+	background: rgba(0,0,0,0);
+	border-radius: 0.12rem;
+	font-size: 0.2rem;
+	float: left;
+	color: #d1d0d0;
+}
+/*文本框提示文本的颜色*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #d1d0d0; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #d1d0d0;
+}
+
+.search-tool .serarchInput:-ms-input-placeholder{
+color: #d1d0d0;
+}
+
+.search-tool .serarchInput::-webkit-input-placeholder{
+color: #d1d0d0;
+}
+
+.menu-bar{
+	display: none;
+	z-index: 98;
+}
+.menu-bar .menuList{
+    position: absolute;
+    right: 0; 
+    z-index: 98; 
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.menu-bar .menuList li a{
+	display: block;
+	width: 3rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+	color: black;
+    background: white;
+    font-size: 0.2rem;
+    text-align: center;
+}
+.menu-bar .menuList li:hover a,.menu-bar .menuList li.active a{
+	color: white;  
+	background: black;
+}
+.banner img{
+	width: 100%;
+}
+
+
+.navList{
+	width: 100%;
+	height: 1.6rem;
+	margin-top: 0.1rem;
+}
+.navList li a{
+	float: left;
+	width: 25%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.25rem;
+	text-align: center;
+	color: #4c4c4c;
+	background: #ffffff;
+	border: 1px solid #ccd2df;
+}
+
+
+
+.container{
+	width: 7rem;
+	margin:0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.my-news{
+	width: 100%;
+	height: 1.35rem;
+	background: #0c3178;
+	margin-top: 0.2rem;
+}
+.my-news .left{
+	float: left;
+	margin-top: 0.39rem;
+}
+
+.my-news .left .name{
+	width: 1.2rem;
+	height: 0.55rem;
+	line-height: 0.55rem;
+	background: #ffffff;
+	color: #2f4783;
+	font-size: 0.35rem;
+	text-align: center;
+	border-radius: 0.25rem;
+}
+.my-news .center{
+	float: left;
+	margin-top: 0.39rem;
+	margin-left: 0.35rem;
+	text-align: left;
+}
+.my-news .center .title{
+	color: #ffffff;
+	font-size: 0.3rem;
+	width: 4.1rem;
+	white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.my-news .center .time{
+	color: #ffffff;
+	font-size: 0.23rem;
+	padding-top: 0.1rem;
+}
+.my-news .right{
+	float: left;
+	width: 0.55rem;
+	height: 0.55rem;
+	line-height: 0.55rem;
+	margin-top: 0.39rem;
+	margin-left: 0.8rem;
+}
+.my-news .right a{
+	display: block;
+    width: 0.55rem;
+	height: 0.55rem;
+	border-radius: 50%;
+}
+.my-news .right .iconfont{
+	float: left;
+    color: #0b3078;
+    width: 0.55rem;
+	height: 0.55rem;
+	font-size: 0.3rem;
+	background: #ffffff;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.my-top-title{
+	width: 100%;
+	height: 1.14rem;
+	background: #ffffff;
+	text-align: center;
+}
+.my-top-title .title{
+	color: #000000;
+	font-size: 0.35rem;
+	padding-top: 0.52rem;
+}
+
+.my-product{
+	padding-bottom: 0.3rem;
+}
+.my-product .swiper2 .swiper-slide{
+	width: 3.4rem;
+	background: #ffffff;
+	padding: 0.3rem 0;
+	margin-top: 0.3rem;
+}
+.my-product .swiper2 .swiper-slide img{
+	width: 3.17rem;
+	height:3.31rem;
+}
+.my-product .swiper2 .swiper-slide .name{
+	color: #000000;
+	font-size: 0.25rem;
+	margin-top: 0.24rem;
+    white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+.index-more a{
+	width: 1.6rem;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	font-size: 0.25rem;
+	margin: 0 auto; 
+    margin-top: 0.2rem;
+    text-align: center;  
+    background: #0c3178;
+    color: #ffffff;
+    border-radius: 0.25rem;
+}
+
+.my-about{
+	width: 100%;
+	background: #ffffff;
+	padding-top: 0.68rem;
+}
+
+.my-aboutbg{
+	width: 100%;
+	height: 2.4rem;
+	background-position: center;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.my-about a{
+	width: 0.95rem;
+	height: 1.98rem;
+	background: rgba(46,67,88,0.6);
+	position: absolute;
+	top: 0.22rem;
+	left: 0.6rem;
+}
+
+.my-about a .left{
+	float: left;
+	width: 0.4rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+	margin-left: 0.1rem;
+	margin-top: 0.15rem;
+}
+.my-about a .right{
+	float: left;
+	width: 0.4rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+	margin-left: 0.05rem;
+	margin-top: 0.8rem;
+}
+.my-about a .right .iconfont{
+	float: left;
+	width: 0.4rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+}
+
+.my-room{
+	background: #ffffff;
+	padding-bottom: 0.55rem;
+}
+
+
+/*关于我们*/
+.about{
+	font-size: 0;
+	text-align: center;
+	padding-bottom: 0.55rem;
+}
+.top-titleBox{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	box-shadow: 0rem 0.01rem 0.05rem rgba(12,49,120,0.3);
+	background: #f7f9fb;
+	border-bottom: 1px solid #dde1e9;
+	z-index: 98;
+}
+
+.top-titleBox .title-cn{
+	color: #284179;
+	font-size: 0.4rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+}
+
+.top-tabbar{
+	display: inline-block;
+	margin-top: 0.45rem;
+}
+.top-tabbar li{
+	float: left;
+	position: relative;
+}
+.top-tabbar li:not(:nth-child(3n)){
+  margin-right:0.5rem;
+}
+.top-tabbar li a{
+	width: 1.68rem;
+	height: 0.64rem;
+    line-height: 0.64rem;
+	color: #a4a4a4;
+	font-size: 0.28rem;
+}
+
+.top-tabbar li.active a{
+	background: #0c3178;
+	color: #ffffff;
+}
+.top-tabbar li.active .triangle-down {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -0.12rem;
+    width: 0;
+    height: 0;
+    border-left: 0.12rem solid transparent;
+    border-right: 0.12rem solid transparent;
+    border-bottom: 0.08rem solid #f6f6f6;
+}
+.about .content{
+	width: 100%;
+	text-align: left;
+	margin-top: 0.55rem;
+}
+.about .content p{
+	width: 100%;
+	color: #676767;
+	font-size: 0.25rem;
+	line-height: 0.5rem;
+	text-indent: 0.37rem;
+}
+.img-group img{
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+
+/*产品中心*/
+.product{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.55rem;
+}
+.product-List{
+   display: inline-block;
+   text-align: center;
+   margin-top: 0.3rem;
+}
+
+.product-List li{
+	float: left;
+	width: 3.4rem;
+	background: #ffffff;
+	padding: 0.3rem 0;
+	margin-top: 0.3rem;
+}
+.product-List li:not(:nth-child(2n)){
+  margin-right:0.2rem;
+}
+
+.product-List li img{
+	width: 3.17rem;
+	height:3.31rem;
+}
+.product-List li .name{
+	color: #000000;
+	font-size: 0.25rem;
+	margin-top: 0.3rem;
+    white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	
+	
+}
+.product-List li .description{
+	width: 2.7rem;
+	height: 1.4rem;
+	line-height: 0.3rem;
+	text-indent: 0.35rem;
+	margin: 0 auto;
+	color: #b6b6b6;
+	font-size: 0.2rem;
+	margin-top: 0.25rem;
+	text-align: left;
+	overflow:hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5; 
+	text-overflow:ellipsis;
+
+
+}
+.product-List .index-more a{
+	margin-top: 0.45rem;
+}
+
+
+/*同体中板大理石*/
+.product-zhongban{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.55rem;
+}
+
+.speceSwiper{
+	background: #ffffff;
+	margin-top: 0.05rem;
+}
+
+.speceSwiper li{
+	width: 1.65rem;
+	height: 0.75rem;
+}
+.speceSwiper li .spece{
+	width: 1.65rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	color: #284179;
+	font-size: 0.2rem;
+}
+.speceSwiper li .line{
+	width: 1.65rem;
+	height: 0.5rem;
+	background: #ffffff;
+}
+.speceSwiper li.active .line{
+	background: #0c3178;
+}
+
+.prozhongban-List{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0.15rem;
+}
+
+.prozhongban-List li{
+	width: 100%;
+	height: 4.4rem;
+	background: #ffffff;
+	border-radius: 0.06rem;
+	box-shadow: 0rem 0.01rem 0.05rem rgba(12,49,120,0.3);
+	margin-top: 0.4rem;
+}
+
+.prozhongban-List li img{
+	width: 6.4rem;
+	height: 3.2rem;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+}
+
+.prozhongban-List li .group{
+	width: 6.4rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+}
+.prozhongban-List li .group .name{
+	float: left;
+	width: 5rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	color: #284179;
+	font-size: 0.25rem;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.prozhongban-List li .group .du{
+	float: right;
+	width: 1.06rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	color: #ffffff;
+	font-size: 0.25rem;
+	background: #0c3178;
+	border-radius: 0.2rem;
+}
+
+
+.my-page{
+	display: inline-block;
+	margin-top: 0.6rem;
+	text-align: center;
+}
+
+.my-page li{
+	width: 0.8rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	background: rgba(0,0,0,0);
+	color:#0c3178;
+	font-size: 0.18rem;
+	border: 1px solid #0c3178;
+	border-radius: 0.12rem;
+	float: left;
+}
+.my-page li.active{
+	background:#0c3178;
+	color: #ffffff;
+}
+.my-page li:not(:last-child){
+	margin-right: 0.15rem;
+}
+
+
+
+/*同体中板大理石详情页*/
+.zhongban-detail{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+.zhongban-detail img{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.zhongban-detail .goodsImg{
+	margin-top: 0.6rem;
+}
+
+.zhongban-detail .info{
+	margin-top: 0.4rem;
+}
+.zhongban-detail .info .number{
+	color: #284179;
+	font-size: 0.25rem;
+	font-weight: normal;
+}
+.zhongban-detail .info .size{
+	color: #284179;
+	font-size: 0.25rem;
+	padding-top: 0.2rem;
+}
+.zhongban-detail .info .du{
+	width: 1.06rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	color: #ffffff;
+	font-size: 0.25rem;
+	background: #0c3178;
+	border-radius: 0.2rem;
+}
+.zhongban-detail .descImg{
+	margin-top: 0.77rem;
+}
+.zhongban-detail .description{
+	text-align: left;
+	color: #979797;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	padding-top: 0.8rem;
+	text-indent: 0.65rem;
+}
+.detail-top-title{
+	color: #0c3178;
+	font-size: 0.25rem;
+	padding-top: 0.85rem;
+}
+.zhongban-detail .spaceImg{
+	margin-top: 0.15rem;
+}
+
+
+/*同体大理石*/
+.product-dalishi{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+.prodalishi-List{
+	display: inline-block;
+	width: 6.66rem;
+	margin-top: 0.15rem;
+}
+
+.prodalishi-List li{
+	float: left;
+	width:3.18rem;
+	height:3.9rem;
+	background: #ffffff;
+	border-radius: 0.06rem;
+	box-shadow: 0rem 0.01rem 0.05rem rgba(12,49,120,0.3);
+	margin-top: 0.5rem;
+}
+
+.prodalishi-List li:not(:nth-child(2n)){
+	margin-right: 0.3rem;
+}
+
+.prodalishi-List li img{
+	width: 2.76rem;
+	height: 2.76rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+
+.prodalishi-List li .group{
+	width: 2.76rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+}
+.prodalishi-List li .group .name{
+	float: left;
+	width: 1.7rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	color: #284179;
+	font-size: 0.25rem;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.prodalishi-List li .group .du{
+	float: right;
+	width: 1.06rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	color: #ffffff;
+	font-size: 0.25rem;
+	background: #0c3178;
+	border-radius: 0.2rem;
+}
+
+
+
+/*新闻资讯*/
+.news{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+.newsList{
+	width: 100%;
+	margin-top: 0.25rem;
+}
+.newsList li{
+	width: 100%
+	height: 2.1rem;
+	display: inline-block;
+	margin-top: 0.35rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 2px solid #dfdfdf;
+}
+.news-figure{
+    float: left;
+}
+.newsList li img{
+	width: 2.28rem;
+	height:1.58rem;
+}
+.newsList .info{
+	float: left;
+	width: 4.4rem;
+	height: 1.58rem;
+	text-align: left;
+	margin-left: 0.32rem;
+}
+
+.newsList li .title{
+	color:#405383;
+	font-size: 0.23rem;
+	height: 0.3rem;
+	white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.newsList li .time{
+	color:#3e3e3e;
+	font-size: 0.18rem;
+	padding-top: 0.05rem;
+}
+.newsList li .description{
+	color:#8a8a8a;
+	height: 0.6rem;
+	line-height: 0.29rem;;
+	font-size: 0.2rem;
+    margin-top: 0.1rem;
+    overflow:hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; 
+	text-overflow:ellipsis;
+}
+.newsList li .more a{
+	color:#212121;
+	font-size: 0.22rem;
+	padding-top: 0.1rem;
+}
+
+/*工程案例*/
+.project{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+.caseList{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0.3rem;
+}
+.caseList li{
+	float: left;
+	width: 3.3rem;
+	height: 3.8rem;
+	margin-top: 0.3rem;
+	background: #fdfbfc;
+    border-radius: 0.05rem;
+    padding-top: 0.07rem;
+    box-shadow: 0rem 0.01rem 0.05rem rgba(12,49,120,0.3);
+}
+.caseList li:not(:nth-child(2n)){
+	margin-right: 0.4rem;
+}
+.caseList li img{
+	width: 3.15rem;
+	height: 3.15rem;
+
+}
+.caseList li .casename{
+	width: 90%;
+	margin: 0 auto;
+	background: #ffffff;
+	color: #0d0d0d;
+	font-size: 0.25rem;
+	height: 0.5rem;
+	padding-top: 0.15rem;
+	white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+
+/*联系我们*/
+.contact{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+
+.contact .company{
+	color: #0c3178;
+	font-size: 0.35rem;
+	padding-top: 0.8rem;
+}
+.contact .phone{
+	color: #1e1e1e;
+	font-size: 0.25rem;
+	padding-top: 0.55rem;
+}
+.contact .e-mail{
+	color: #1e1e1e;
+	font-size: 0.25rem;
+	padding-top: 0.15rem;
+}
+.contact .address{
+	color: #1e1e1e;
+	font-size: 0.25rem;
+	padding-top: 0.15rem;
+}
+
+.contact .code{
+	width: 2.07rem;
+	height: 2.07rem;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+}
+.contact .tip{
+	color: #1e1e1e;
+	font-size: 0.2rem;
+	padding-top: 0.15rem;
+}
+
+.map-group{
+	width: 100%;
+	margin-top: 0.75rem;
+}
+
+.map-group .zaixian{
+	color: #404040;
+	font-size: 0.25rem;
+}
+.map-group .map{
+	width:100%;
+	height:3.5rem;
+	margin-top: 0.2rem;
+	border: 1px solid black;
+}
+
+/*联系我们*/
+.join{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+/*人才招聘*/
+.recruit{
+	font-size: 0;
+	text-align: center;
+	background: #f6f6f6;
+	padding-bottom: 0.7rem;
+}
+
+
+
+
+
+.am-figure-zoomable:after{
+	display: none;
+}
+
+
+
+.footer{
+	width: 100%;
+	height: 1rem;
+	background: #0c3178;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+}
+.footer .footNaviList{
+	width: 100%;
+	height: 100%;
+}
+.footer .footNaviList li{
+	float: left;
+	width: 20%;
+	height: 1rem;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.2rem;	
+	cursor: pointer;
+	padding-top: 0.1rem;
+}
+.footer .footNaviList li.active{
+    color: #ffb95a;	
+}
+.footer .footNaviList li .iconfont{
+	font-size: 0.45rem;
+}
+.whiteSpace{
+	width: 100%;
+	height: 1rem;
+	background: #f6f6f6;
+}
+
+
+
+@media (min-width: 320px){html{font-size: 42.7px;}}
+@media (min-width: 360px){html{font-size: 48px;}}
+@media (min-width: 375px){html{font-size: 50px;}}
+@media (min-width: 384px){html{font-size: 51.1px;}}
+@media (min-width: 412px){html{font-size: 54.8px;}}
+@media (min-width: 414px){html{font-size: 55px;}}
+@media (min-width: 448px){html{font-size: 59.6px;}}
+@media (min-width: 480px){html{font-size: 63.8px;}}
+@media (min-width: 512px){html{font-size: 68px;}}
+@media (min-width: 544px){html{font-size: 72.4px;}}
+@media (min-width: 576px){html{font-size: 76.6px;}}
+@media (min-width: 608px){html{font-size: 80.9px;}}
+@media (min-width: 640px){html{font-size: 85.1px;}}
+@media (min-width: 750px){html{font-size: 100px;}}
+@media (min-width: 800px){html{font-size: 106.5px;}}
+@media (min-width: 1024px){html{font-size: 136.5px;}}

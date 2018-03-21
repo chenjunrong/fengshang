@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>风尚官网-视图详情</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="framework/Swiper-3.4.2/css/swiper.css" />
+		<link rel="stylesheet" href="resources/icon1/iconfont.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/icon/iconfont.js"></script>
+        <script type="text/javascript" src="js/public.js"></script>
+	</head>
+	<body id="view-detail">
+		<div id="header">
+			<nav id="navbar">
+				<a href="index.html">
+					<h1 class="logo">
+			     	
+			        </h1>
+				</a>
+				
+			<ul class="list">
+				<li><a href="view-detail.html" class="active">服务</a></li>
+				<li><a href="news.html">动态</a></li>
+				<li><a href="case.html">案例</a></li>
+				<li><a href="about.html">了解</a></li>
+				<li><a href="contact.html">联系</a></li>			
+			</ul>
+			       
+		    </nav>
+		</div>
+		
+		<div style="background: #FFFFFF; width: 100%;height: 80px;">
+				
+		</div>
+		
+		<div class="main">
+			<div class="content">
+				<p class="p1">中交天和</p>
+				<p class="p2">2017-08-26</p>
+				<p class="p3">我们是亚洲领先的在线和移动食品订购公司，致力于披萨食客与当地外卖餐厅。公司在线和移动订购平台允许食客直接从城市约100家外卖餐厅订购。每个订单都得到了公司的24/7客户服务团队的支持，让喜欢披萨的用户更方便地吃到新鲜美味的披萨外卖</p>
+			</div>
+			<div class="banner">
+				<div class="left">
+					<img src="img/button-prev.png"/>
+				</div>
+				<div class="center">
+					<!-- Swiper -->
+				    <div class="swiper-container" style="width: 100%;height:100%;">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide" style="background-image: url(img/view-detail_01.jpg);background-position: center;background-size: cover;"></div>
+				            <div class="swiper-slide" style="background-image: url(img/view-detail_02.jpg);background-position: center;background-size: cover;"></div>
+				            <div class="swiper-slide" style="background-image: url(img/view-detail_03.jpg);background-position: center;background-size: cover;"></div>
+				        </div>
+				    </div>
+				</div>
+				<div class="right">
+					<img src="img/button-next.png"/>
+				</div>
+			</div>
+			<div class="link">
+				<a href="#"><img src="img/view-detail_link.jpg" style=""/></a>
+				<p class="p2" style="text-align: center;">浏览网站</p>
+			</div>
+
+
+		</div>
+		
+
+	    
+		 <div id="footer">
+
+               <div class="container"> 
+	               <div class="left">
+	               	   <img src="img/QRcode.png"/>
+	               	   <p class="p1">微信</p>
+	               </div>
+	               <div class="right">
+	                   <p class="p1">0757-82291211</p>
+                   	   <p class="p2"><span>QQ：2812638051</span><span style="padding-left: 20px;">Fax：0757-82701003</span></p>
+                   	   <p class="p2">地址：广东省佛山市禅城区季华西路133号金盈绿岛国际中心A2座14楼</p>
+                   	   <p class="p2"><span>备案号：粤XXXXXXX</span><span style="padding-left: 20px;">佛山千思寻广告有限公司 2017  版权所有</span> </p>  	
+	                </div>
+                   	 
+                </div>
+           
+         </div>
+	    
+	   
+
+
+		
+	
+		<script type="text/javascript" src="framework/Swiper-3.4.2/js/swiper.jquery.min.js"></script>
+		<script>
+
+             //计算高度
+	         autoHeight();
+	         function autoHeight(){
+		     	var winHeight=$(window).height();
+		     	var mainHeight=winHeight-80-160;
+                var banHeight=mainHeight*0.5;
+                $("#view-detail .banner").height(banHeight);
+                
+		     };
+		     
+		     
+		    //轮播插件 
+		    var swiper = new Swiper('.swiper-container', {
+		        loop:true,
+		        slidesPerView: 3,
+		        spaceBetween: 50,
+		        autoplay: 2500,
+                autoplayDisableOnInteraction: false
+		    });
+		    
+		     
+		     $(window).load(function(){
+
+		     	
+		     	$('#view-detail .banner .left').click(function(){
+					swiper.slidePrev();
+			    });
+			    
+			    $('#view-detail .banner .right').click(function(){
+					swiper.slideNext();
+				});
+		     })
+
+
+		    //监听窗口改变事件
+		    $(window).resize(function(){		
+                 autoHeight();
+		    });
+		    
+		       
+		</script>
+
+	</body>
+</html>

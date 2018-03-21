@@ -1,0 +1,10 @@
+
+/*Gallery*/
+#gallery {display: inline-block;margin:0 auto;margin-top: -1rem;}
+.container_image{margin:0 auto;position:relative;width:100%;padding: 0;}	
+/*===== gallery =====*/
+.roundabout-holder{width:7rem;height:6rem;display:inline-block;margin:0 auto;padding: 0;}
+.roundabout-moveable-item {width: 4.41rem;height: 3.72rem;cursor: pointer;padding: 0;}
+.roundabout-moveable-item img{width:100%;}
+/*.roundabout-in-focus {border:3px solid rgba(0, 0, 0, 0.2);}*/
+

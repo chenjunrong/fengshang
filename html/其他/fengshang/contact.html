@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+		<title>风尚官网-联系</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="framework/Swiper-3.4.2/css/swiper.css" />
+		<link rel="stylesheet" href="resources/icon1/iconfont.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="resources/icon/iconfont.js"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TSXiV0Q0coKC2eHI84twmKrmlhSNR6dy"></script>
+	</head>
+	<body id="contact">
+		<div id="header">
+			<nav id="navbar">
+				<a href="index.html">
+					<h1 class="logo">
+			     	
+			        </h1>
+				</a>
+				
+			<ul class="list">
+				<li><a href="view-detail.html">服务</a></li>
+				<li><a href="news.html">动态</a></li>
+				<li><a href="case.html">案例</a></li>
+				<li><a href="about.html">了解</a></li>
+				<li><a href="contact.html" class="active">联系</a></li>			
+			</ul>
+			       
+		    </nav>
+		</div>
+		
+		<div style="background: #FFFFFF; width: 100%;height: 80px;">
+				
+		</div>
+		
+		<div class="main clearfix">
+			<div id="allmap" style="width:100%;height: 500px;"></div>
+			<div class="content">
+				<div class="left">
+					<div class="box1" style=";width: 50%;float: left;">
+					<p class="p1">佛山风尚网络科技有限公司</p>
+					<p class="p2">值班时间：08：30-18：00</p>
+					<p class="p3">0757-82291211</p>
+					<p class="p2">QQ：<span>2812638051</span><span style="margin-left: 20px;">Fax：<span>0757-82701003</span></span></p>
+					<p class="p2 p4">广东省佛山市禅城区季华西路133号金盈绿岛国际中心A2座14楼</p>
+					<p class="p1">免费获取网站建设方案及报价</p>
+					</div>
+				<div class="right clearfix" style="width: 50%;float: left;">
+			    <div class="swiper-container" style="width:100%;height:100%;">
+			        <div class="swiper-wrapper">
+                       <div class="swiper-slide" style="background-image: url(img/view-detail_01.jpg);background-position: center;background-size: cover;"></div>
+				            <div class="swiper-slide" style="background-image: url(img/view-detail_02.jpg);background-position: center;background-size: cover;"></div>
+				            <div class="swiper-slide" style="background-image: url(img/view-detail_03.jpg);background-position: center;background-size: cover;"></div>
+			        </div>
+		        </div>
+		        </div>
+					<from>
+						<input placeholder="  称呼或姓名" style="width:10%;" name="name"/>
+						<input placeholder="  邮箱" style="height:40px;width:10%;" name="email"/>
+						<input placeholder="  手机或电话" style="height:40px;width:10%;" name="phone"/>
+						<input placeholder="  描述您的需求，如网站、小程序、微信公众号、电商平台、门户社区等" style="width:50%;" name="description"/>	
+						<div class="button">获取方案于报价</div>
+					</from>
+					
+				</div>
+		
+			</div>
+		</div>
+		
+
+
+		<div id="footer">
+
+               <div class="container"> 
+	               <div class="left">
+	               	   <img src="img/QRcode.png"/>
+	               	   <p class="p1">微信</p>
+	               </div>
+	               <div class="right">
+	                   <p class="p1">0757-82291211</p>
+                   	   <p class="p2"><span>QQ：2812638051</span><span style="padding-left: 20px;">Fax：0757-82701003</span></p>
+                   	   <p class="p2">地址：广东省佛山市禅城区季华西路133号金盈绿岛国际中心A2座14楼</p>
+                   	   <p class="p2"><span>备案号：粤XXXXXXX</span><span style="padding-left: 20px;">佛山千思寻广告有限公司 2017  版权所有</span> </p>  	
+	                </div>
+                   	 
+               </div>
+         </div>
+	    
+	   
+
+
+		
+	
+<script type="text/javascript" src="framework/Swiper-3.4.2/js/swiper.jquery.min.js"></script>
+<script type="text/javascript">
+	
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(113.0424391810,23.0119153490);
+	map.centerAndZoom(point, 18);
+	
+	//创建小狐狸
+	var pt = new BMap.Point(113.0424391810, 23.0119153490);
+	var myIcon = new BMap.Icon("http://lbsyun.baidu.com/jsdemo/img/fox.gif", new BMap.Size(300,157));
+	var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker2);              // 将标注添加到地图中
+	
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+	map.addControl(top_right_navigation); 
+</script>
+	<script>
+
+		     //计算高度
+	         autoHeight();
+	         function autoHeight(){
+		     	var winHeight=$(window).height();
+
+                $("#contact .main .right").height($("#contact .main .content .box1").height());
+
+			 };
+			 
+			$(window).load(function(){
+				$(".wrapper .timeline__item").click(function(){
+				  location.href="news-detail.html";
+				})
+			});
+			
+			var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        centeredSlides: true,
+		        autoplay: 2500,
+		        autoplayDisableOnInteraction: false
+		    });
+			
+					    //监听窗口改变事件
+		    $(window).resize(function(){		
+                 autoHeight();
+		    });
+	</script>
+          
+	</body>
+</html>

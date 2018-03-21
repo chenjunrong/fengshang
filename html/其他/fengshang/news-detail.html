@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>风尚官网-动态详情</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="framework/Swiper-3.4.2/css/swiper.css" />
+		<link rel="stylesheet" href="resources/icon1/iconfont.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="resources/icon/iconfont.js"></script>
+<style type="text/css">
+
+</style>
+	</head>
+	<body id="news-detail">
+		<div id="header">
+			<nav id="navbar">
+				<a href="index.html">
+					<h1 class="logo">
+			     	
+			        </h1>
+				</a>
+				
+			<ul class="list">
+				<li><a href="view-detail.html">服务</a></li>
+				<li><a href="news.html" class="active">动态</a></li>
+				<li><a href="case.html">案例</a></li>
+				<li><a href="about.html">了解</a></li>
+				<li><a href="contact.html">联系</a></li>			
+			</ul>
+			       
+		    </nav>
+		</div>
+		
+		<div style="background: #FFFFFF; width: 100%;height: 80px;">
+				
+		</div>
+		
+		<div class="main">
+			<div class="text-box">
+        		<p class="p1">最新动态</p>
+        	    <p class="p2">lately News</p>
+            	<p class="p3">wwwww</p>
+           </div>
+           <div class="container">
+           	    <p class="p1" name="title">年度合作：周大福金粒/条预定平台</p>
+           	    <p class="p2">来源：<span name="form">佛山风尚网络科技</span><span name="time" style="padding-left: 80px;">2017/6/2 17:53:39</span></p>
+           	    <img src="img/news-detail_01.jpg"/ style="width: 40%;">
+           	    <p class="p3" name="description1">深圳Clh与周大福持续了四年的网站建设年度合作，主要是负责周大福官网及其旗下子网站，活动网站，专题网站，移动端网站的建设及设计服务，项目对接为周大福因对持续合作的服务非常满意，现在周大福香港提出建设金粒/条预定平台，由深圳南集互动负责平台的建立，通过沟通项目需求，预定平台用户先在线预约、重量。深圳Clh与周大福持续了四年的网站建设年度合作，主要是负责周大福官网及其旗下子网站，活动网站，专题网站，移动端网站的建设及设计服务，项目对接为周大福因对持续合作的服务非常满意，现在周大福香港提出建设金粒/条预定平台，由深圳南集互动负责平台的建立，通过沟通项目需求，预定平台用户先在线预约、重量。</p>
+           	    <p class="p3" name="description2">深圳Clh与周大福持续了四年的网站建设年度合作，主要是负责周大福官网及其旗下子网站，活动网站，专题网站，移动端网站的建设及设计服务，项目对接为周大福因对持续合作的服务非常满意，现在周大福香港提出建设金粒/条预定平台，由深圳南集互动负责平台的建立，通过沟通项目需求，预定平台用户先在线预约、重量。深圳Clh与周大福持续了四年的网站建设年度合作，主要是负责周大福官网及其旗下子网站，活动网站，专题网站，移动端网站的建设及设计服务，项目对接为周大福因对持续合作的服务非常满意，现在周大福香港提出建设金粒/条预定平台，由深圳南集互动负责平台的建立，通过沟通项目需求，预定平台用户先在线预约、重量。</p>
+           </div>
+
+		</div>
+		
+
+	    
+		 <div id="footer">
+               <div class="container"  > 
+	               <div class="left" >
+	               	   <img src="img/QRcode.png"/>
+	               	   <p class="p1">微信</p>
+	               </div>
+	               <div class="right">
+	                   <p class="p1">0757-82291211</p>
+                   	   <p class="p2">QQ：<span name="qq">2812638051</span> <span style="padding-left: 20px;">Fax：<span name="qq">0757-82701003</span></span></p>
+                   	   <p class="p2" name="address">地址：广东省佛山市禅城区季华西路133号金盈绿岛国际中心A2座14楼</p>
+                   	   <p class="p2">备案号：<span name="address">粤XXXXXXX</span><span style="padding-left: 20px;">佛山千思寻广告有限公司 2017  版权所有</span> </p>  	
+	                </div>
+                   	 
+                </div>
+           
+         </div>
+	    
+	   
+
+
+		
+	
+	<script type="text/javascript" src="framework/Swiper-3.4.2/js/swiper.jquery.min.js"></script>
+	<script>
+		     //计算高度
+	         autoHeight();
+	         function autoHeight(){
+		     	var winHeight=$(window).height();
+		     	var imgHeight=$("#news-detail .main .container img").width()/1.5;
+                $("#news-detail .main .container img").height(imgHeight);
+ 	
+			 };
+			 
+			$(window).load(function(){
+				$(".wrapper .timeline__item").click(function(){
+				  location.href="news-detail.html";
+				})
+			});
+			
+					    //监听窗口改变事件
+		    $(window).resize(function(){		
+                 autoHeight();
+		    });
+	</script>
+          
+	</body>
+</html>

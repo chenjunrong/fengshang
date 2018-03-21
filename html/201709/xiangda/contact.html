@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />	
+        <meta http-equiv="X-UA-Compatible" content="edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="resources/icon/iconfont.css" />
+        <link rel="stylesheet" href="framework/Swiper-3.4.2/css/swiper.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+        <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TSXiV0Q0coKC2eHI84twmKrmlhSNR6dy"></script>
+		<title>祥达-联系我们</title>
+	</head>
+	<body id="contact">
+		
+		<div id="header">
+            <div class="tools">
+             	<p class="p1"><a href="contact.html">联系我们</a><a href="##">中文</a>|<a href="##">EN</a></p>
+            </div>
+            <div class="navi">
+             	<div class="navibar">
+             		<img class="logo" src="img/logo.png" />
+             		<ul class="naviList">
+             			<li><a href="index.html">网站首页</a></li>
+             			<li><a href="about.html">关于我们</a></li>
+             			<li><a href="news.html">媒体中心</a></li>
+             			<li><a href="product.html">产品中心</a></li>
+             			<li><a href="project.html">工程与荣誉</a></li>
+             			<li><a href="product-make.html">加盟与合作</a></li>
+             		</ul>
+             	</div>
+            </div>
+		</div>
+		
+		
+		<div class="box1">
+		    <div class="swiper-container swiper1">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="img/banner_01.jpg"></div>
+		            <div class="swiper-slide"><img src="img/banner_02.jpg"></div>
+		            <div class="swiper-slide"><img src="img/banner_03.jpg"></div>
+		        </div>
+		        <div class="box1-pagination"></div>
+	       </div>
+		</div>
+		
+		<div class="box2 clearfix">
+			<div class="main">
+                 <p class="location clearfix"><i class="iconfont">&#xe602;</i><span>您所在的位置：关于祥达 > 企业简介</span></p>
+                 <ul class="tabList">	
+                 	<li class="active"><a href="###">联系我们</a></li>
+                 	<li><a href="###">招商加盟</a></li>
+                 </ul>
+
+                 <div class="content">
+                 	<img class="logoView"  src="img/logo.png"/>
+                 	<div class="group">
+                     	<div id="allmap" class="map" style="width:610px;height: 423px;"></div>
+                        <div class="textgroup">
+                        	<p class="p1">服务热线：0757-83551013</p>
+                        	<p class="p1">传真：0757-82018173</p>
+                        	<p class="p1">营销中心地址：佛山市禅城区南庄镇华夏陶瓷博览城陶北路1号	</p>
+                        	<p class="p1">厂址：佛山市西樵镇河岗工业区</p>
+                            
+                            <div class="codegroup">
+							 	<div class="group1">
+							 		<img class="code" src="img/code_01.jpg"/>
+							 		<p class="codeText">网站二维码</p>
+							 	</div>
+							 	<div class="group2">
+							 		<img class="code" src="img/code_02.jpg"/>
+							 		<p class="codeText">微信公众号</p>
+							 	</div>
+						 	</div>
+                        </div>
+                 	</div>
+                 </div>	 
+
+                
+            </div>
+		</div>
+
+		
+		
+		
+		
+		<div id="footer">
+			 <div class="main">
+			 	<div class="left">
+			 		<img src="img/footer_logo.jpg" />
+			 	</div>
+			 	<div class="center">
+			 		<ul class="naviList">
+             			<li><a href="index.html">网站首页</a></li>
+             			<li><a href="about.html">关于我们</a></li>
+             			<li><a href="news.html">媒体中心</a></li>
+             			<li><a href="product.html">产品中心</a></li>
+             			<li><a href="project.html">工程与荣誉</a></li>
+             			<li><a href="product-make.html">加盟与合作</a></li>
+             		</ul>
+			 	</div>
+			 	<div class="right">
+			 		<p class="phone">服务热线：<span>0757-83551013</span></p>
+			 		<p class="address">厂址：<span>佛山市禅城区南庄镇华夏陶瓷博览城陶北路1号 </span</p>
+			 	</div>
+			 </div>
+		</div>
+		
+       
+  
+           		
+           		
+           		
+           		
+       
+           
+	<script type="text/javascript" src="framework/Swiper-3.4.2/js/swiper.jquery.min.js" ></script>
+	<script type="text/javascript">
+	
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(113.0230575992,22.9713635141);
+	map.centerAndZoom(point, 20);
+	var marker = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker);              // 将标注添加到地图中
+	
+
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+	map.addControl(top_right_navigation); 
+</script>
+	<script>
+		
+		 
+		
+		$(window).load(function(){
+			$("#header .navi .navibar .logo").click(function(){
+		    	location.href="index.html";
+		    });	
+        };
+		
+	
+		var swiper1 = new Swiper('.swiper1', {
+			pagination: '.box1-pagination',
+		    paginationClickable: true,
+		    loop:true,
+		    spaceBetween: 0,
+		    centeredSlides: true,
+		    autoplay: 2500,
+		    autoplayDisableOnInteraction: false
+		});
+		
+
+		
+	</script>           
+	
+	</body>
+
+</html>
