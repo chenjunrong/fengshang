@@ -21,12 +21,14 @@
          
 
 	    if($(".inside-tabbar-swiper").length>0){
-	        if(inside_tabbar_swiper.slides.length==2){
-	
+	    	if(inside_tabbar_swiper.slides.length==1){
+		        inside_tabbar_swiper = new Swiper('.inside-tabbar-swiper', {
+				    slidesPerView: 1
+				});		
+	        }else if(inside_tabbar_swiper.slides.length==2){
 		        inside_tabbar_swiper = new Swiper('.inside-tabbar-swiper', {
 				    slidesPerView: 2
-				});	
-				
+				});			
 	        }else if(inside_tabbar_swiper.slides.length==3){
 	        	inside_tabbar_swiper = new Swiper('.inside-tabbar-swiper', {
 				    slidesPerView: 3

@@ -266,7 +266,6 @@ input{
 }
 /*内页顶部标题结束*/
 
-
 /*内页选项开始*/
 .inside-tabbar-swiper{
 	display: inline-block;
@@ -292,6 +291,62 @@ input{
 	color: #e0a302;
 }
 /*内页选项结束*/
+
+/*内页分类选项swiper开始*/
+.inside-type-swiper{
+	display: inline-block;
+	width: 100%;
+	background: #ffffff;
+	border-bottom: 1px solid #cccccc;
+}
+.inside-type-swiper .swiper-slide a{
+	display: inline-block;
+}
+.inside-type-swiper .swiper-slide a .name{
+	display: inline-block;
+	text-align: center;
+	padding: 0 0.4rem;
+	color: #000000;
+	font-size: 0.35rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.inside-type-swiper .swiper-slide.active a .name{
+	color: #ffffff;
+	background: #000000;
+}
+/*内页分类选项swiper结束*/
+
+/*内页分类选项swiper开始*/
+.inside-size-swiper{
+	display: inline-block;
+	width: 100%;
+	background: #ffffff;
+	border-bottom: 1px solid #cccccc;
+}
+.inside-size-swiper .swiper-slide a{
+	display: inline-block;
+}
+.inside-size-swiper .swiper-slide a .name{
+	display: inline-block;
+	text-align: center;
+	padding: 0 0.4rem;
+	color: #000000;
+	font-size: 0.35rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.inside-size-swiper .swiper-slide.active a .name{
+	color: #ffffff;
+	background: #afacac;
+}
+/*内页分类选项swiper结束*/
 
 /*内页线开始*/
 .inside-line{
@@ -722,7 +777,8 @@ color: #9b9b9b;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
-	padding-top: 0.5rem;
+	border-bottom: 1px solid #cccccc;
+	padding: 0.3rem 0;
 }
 .info-page-List{
 	display: inline-block;
@@ -732,9 +788,8 @@ color: #9b9b9b;
 	width: 1.75rem;
 	height: 0.55rem;
 	line-height: 0.53rem;
-	font-size: 0.3rem;
-	border: 1px solid #cccccc;
-	border-radius: 0.05rem;
+	font-size: 0.33rem;
+
 }
 .info-page-List li:not(:first-child){
 	margin-left: 0.3rem;
@@ -743,7 +798,7 @@ color: #9b9b9b;
 	display: block;
 	width: 100%;
 	height: 100%;
-	color: #858585;
+	color: #585858;
 }
 /*详情翻页结束*/
 
@@ -973,90 +1028,63 @@ color: #d1d0d0;
 /*首页关于我们开始*/
 .my-about{
     width: 100%;
-    height: 5.8rem;
 	font-size: 0;
-	/*padding: 0.4rem 0 0.3rem 0;*/
+	background: #cccccc;
+	padding: 0.45rem 0;
 }
 .my-about .text-content{
-	float: left;
-	width: 5.1rem;
-	height: 5.1rem;
-	margin-top: 0.35rem;
+	display: inline-block;
+	width: 100%;
 	padding: 0.4rem 0.2rem;
 	background: rgba(0,0,0,0.4);
 	overflow: hidden;
+	text-align: center;
 }
 .my-about .text-content .title{
 	color: #e5e5e4;
-	font-size: 0.3rem;
+	font-size: 0.33rem;
 	text-align: center;
 }
 .my-about .text-content .description{
 	color: #e5e5e4;
-	font-size: 0.22rem;
+	font-size: 0.25rem;
 	line-height: 0.4rem;
 	text-indent: 0.32rem;
+	text-align: left;
 }
 .my-about .text-content .description:nth-child(2){
 	margin-top: 0.3rem;
 }
 .my-about-nav{
-	float: left;
-	width: 1.5rem;
-	margin-top: 0.35rem;
-	margin-left: 0.4rem;
-	overflow: hidden;
+    display: inline-block;
+    margin-top: 0.35rem;
 }
 .my-about-nav li{
-	width: 1.5rem;
-	height: 1.5rem;
-	background: rgba(0,0,0,0.3);
+	float: left;
+	width: 0.9rem;
+	height: 0.9rem;
 	text-align: center;
 }
 .my-about-nav li:not(:first-child){
-	width: 1.5rem;
-	height: 1.5rem;
-	margin-top: 0.3rem;
+	margin-left: 0.6rem;
 }
 .my-about-nav li a{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.my-about-nav li a:before{
-    content:"";
-    display:inline-block;
-    height:100%;
-    vertical-align: middle;
-}
-.my-about-nav li .content{
-	display: inline-block;
-	width:1.12rem;
-	height: 1.12rem;
-	vertical-align: middle;
-	border: 3px solid #eae8e5;
-	border-radius: 0.05rem;
-}
-.my-about-nav li .content{
-	display: inline-block;
-	width:1.12rem;
-	height: 1.12rem;
-	vertical-align: middle;
-	border: 3px solid #eae8e5;
-	border-radius: 0.05rem;
-}
 .my-about-nav li .sign{
 	display: inline-block;
 	color: rgba(255,255,255,0.9);
 	font-size: 0.55rem;
 	text-align: center;
-	margin-top: 0.1rem;
 }
 .my-about-nav li .name{
 	color: rgba(255,255,255,0.9);
 	font-size: 0.2rem;
 	text-align: center;
 	margin-top: 0.1rem;
+	font-weight: normal;
 }
 /*首页关于我们结束*/
 
@@ -1329,107 +1357,92 @@ color: #d1d0d0;
 }
 /*首页新闻结束*/
 
-/*产品中心大理石开始*/
-.prodls-List{
+
+
+/*产品中心开始*/
+.product-swiper{
 	display: inline-block;
-	width: 100%;	
-	margin-top: -0.22rem;
+	width: 100%;
+	padding-bottom: 0.8rem;
 }
-.prodls-List li{
+.product-List{
+	display: inline-block;
+	width: 100%;
+}
+.product-List li{
 	float: left;
-	width: 3.2rem;
-	height: 3.8rem;
-	margin-top: 0.22rem;
+	width: 2.3rem;
+	height: 4rem;
+	border: 0.05rem solid #cccccc;
+	margin-top: 0.2rem
 }
-.prodls-List li:not(:nth-child(2n)){
-	margin-right: 0.44rem;
+.product-List li:not(:nth-child(3n)){
+	margin-right: 0.05rem;
 }
-.prodls-List li a{
+.product-List li a{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.prodls-List li .img-box{
-	width: 3.2rem;
-	height: 3.2rem;
+.product-List li .img-box{
+	width: 2.2rem;
+	height: 2.2rem;
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	padding: 0.045rem;
-	border: 0.03rem solid #cccccc;
-	border-radius: 0.05rem;
 }
-.prodls-img{
+.product-img{
 	max-width: 100%;
-    max-height: 100%;
+	max-height: 100%;
 }
-.prodls-List li .name{
-	text-align: center;
-	color: #757575;
+.product-List li .content{
+	display: inline-block;
+	width: 100%;
+	border-top: 0.05rem solid #cccccc;
+}
+.product-List li .content .name{
+	color: #838383;
 	font-size: 0.3rem;
-	margin-top: 0.22rem;
+	margin-top: 0.15rem;
 	line-height: 1.3;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-}
-/*产品中心大理石结束*/
-
-
-/*产品中心瓷片开始*/
-.procp-List{
-	display: inline-block;
-	width: 100%;	
-	margin-top: -0.22rem;
-}
-.procp-List li{
-	display: inline-block;
-	width: 100%;
-	margin-top: 0.22rem;
-}
-.procp-List li a{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.procp-List li .img-box{
-	display: inline-block;
-	width: 100%;
-	padding: 0.1rem;
-	border: 0.03rem solid #cccccc;
-	border-radius: 0.05rem;
-}
-.procp-img{
-	max-width: 100%;
-}
-.procp-List li .name{
 	text-align: center;
-	color: #757575;
-	font-size: 0.3rem;
-	margin-top: 0.22rem;
-	line-height: 1.3;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
 }
-/*产品中心瓷片结束*/
-
-
-/*大理石详情开始*/
-
-.top-product-name{
+.product-List li .content .number{
 	color: #000000;
-	font-size: 0.4rem;
-	text-align: center;
-	font-weight: normal;
-	line-height: 1.2;
+	font-size: 0.3rem;
+	line-height: 1.3;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	text-align: center;
+	margin-top: 0.05rem;
+}
+.product-List li .content .more{
+	width: 1.2rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	background: #cccccc;
+	color: #fefefe;
+	font-size: 0.22rem;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 0.2rem;
 }
 
+.product-swiper-pagination{position: absolute;text-align: center; z-index: 99;}
+.product-swiper-pagination .swiper-pagination-bullet{width: 0.15rem; height: 0.15rem; background: rgba(0,0,0,0);opacity: 1; border-radius:100%;border: 0.02rem solid #cccccc;}
+.product-swiper-pagination .swiper-pagination-bullet-active{background: #cccccc;}
+/*产品中心结束*/
 
-
+/*产品详情开始*/
+.product-detail{
+	display: inline-block;
+	width: 100%;
+	padding: 0.3rem 0;
+}
 .show-product-box{
 	display: inline-block;
 	width: 100%;	
@@ -1470,81 +1483,106 @@ color: #d1d0d0;
 .info-content{
 	display: inline-block;
 	width: 100%;
-	padding: 0.5rem 0 0 0;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #cccccc;
 }
-.info-content .info-title{
+.info-title{
 	color: #585858;
 	font-size: 0.4rem;
-	line-height: 0.5rem;
 	line-height: 1.3;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-top: 0.2rem;
+}
+/*缩略图画廊开始*/
+.pro-gallery{
+	display: inline-block;
+	width: 100%;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding: 0.2rem 0;
+	margin-top: 0.25rem;
+}
+.pro-gallery-swiper{
+	display: inline-block;
+	width: 100%;
+}
+.pro-gallery-swiper .swiper-slide{
+	height: 1rem;
+	cursor: pointer;
+	overflow: hidden;
+	
+}
+.pro-gallery-swiper .swiper-slide .img-box{
+	width:1rem;
+	height:1rem;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.pro-gallery-swiper .thumbs-img{
+	max-width: 100%;
+	max-height: 100%;
+	border: 2px solid rgba(0,0,0,0);
+}
+.pro-gallery-swiper .swiper-slide:hover .thumbs-img,.pro-gallery-swiper .swiper-slide.active .thumbs-img{
+	border: 2px solid #ff0000;
+}
+.pro-gallery .page-Btn{
+	float: left;
+	width: 0.33rem;
+	height: 1rem;
+	cursor: pointer;
+}
+/*缩略图画廊结束*/
+
+.infp-para{
+	color: #ff8f8f;
+	font-size: 0.33rem;
+	text-align: left;
+}
+.info-list{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0.1rem;
+}
+.info-list li{
+	display: inline-block;
+	width: 100%;
+	margin-top: 0.2rem;
+}
+.info-list li .info-left{
+    float: left;
+	width: 14%;
+	color: #000000;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	text-align: left;
+}
+.info-list li .info-right{
+    float: left;
+	width: 75%;
+	color: #8d8d8d;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	text-align: left;
+}
+.info-content .info-p{
+	color: #000000;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	text-align: left;
+	margin-top: 0.15rem;
 }
 .info-content .info-description{
 	color: #8d8d8d;
 	font-size: 0.3rem;
 	line-height: 0.45rem;
+	margin-top: 0.1rem;
 }
-.info-content .info{
-	width: 100%;
-	padding: 0.2rem 0;
-}
+/*产品详情结束*/
 
-.info-content .info-p{
-	color: #585858;
-	font-size: 0.35rem;
-	margin-top: 0.15rem;
-	line-height: 0.45rem;
-}
-.info-content .info-p span{
-	color: #585858;
-}
-.info-content .info-p:nth-child(1){
-	margin-top: 0rem;
-}
-.info-line{
-	width: 100%;
-	height: 1px;
-	background: #cccccc;
-	margin-top: 0.25rem;
-}
-/*大理石详情结束*/
-
-
-/*瓷片详情开始*/
-.show-procp-box{
-	display: inline-block;
-	width: 7rem;
-	height: 4.44rem;
-}
-.show-procp-box .img-box{
-	width: 7rem;
-	height: 3.7rem;
-	padding: 0.17rem 0.15rem;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	border: 1px solid #000000;
-}
-.show-product{
-	max-width: 100%;
-}
-.show-procp-box .cover{
-	width: 100%;
-	height: 0.7rem;
-    line-height: 0.7rem;
-    text-align: center;
-    color: #ffffff;
-    font-size: 0.3rem;
-    background: rgba(93,8,13,0.6);
-}
-.show-procp-box .cover .name{
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-}
-/*瓷片详情结束*/
 
 /*销售中心开始*/
 .sales-List{
