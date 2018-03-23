@@ -1061,12 +1061,12 @@ color: #d1d0d0;
 }
 .my-about-nav li{
 	float: left;
-	width: 0.9rem;
+	width: 1.2rem;
 	height: 0.9rem;
 	text-align: center;
 }
 .my-about-nav li:not(:first-child){
-	margin-left: 0.6rem;
+	margin-left: 0.4rem;
 }
 .my-about-nav li a{
 	display: block;
