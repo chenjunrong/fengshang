@@ -946,8 +946,8 @@ color: #c7c7c7;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.inside-type-swiper .swiper-slide:not(:first-child) a{
-	border-left: 1px solid #000000;
+.inside-type-swiper .swiper-slide:not(:last-child) a{
+	border-right: 1px solid #000000;
 }
 /*内页分类选项swiper结束*/
 
