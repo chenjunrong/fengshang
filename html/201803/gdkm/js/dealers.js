@@ -71,6 +71,7 @@ $(window).load(function(){
 		    
 			   
 		 
-       
-                       
+        $(".my-two-navbar .two-Item:even").css("background-color","#f9f9f9");
+        $(".my-three-navbar .three-Item:odd").css("background-color","#f9f9f9");
+                      
 	});
