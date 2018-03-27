@@ -153,6 +153,14 @@
         	banner_swiper.slideTo(index, 1000, false);
         });
 	   
+		if($(window).width()<750){
+	
+		   	$.each($(".text-content"),function (index,domEle){
+	            var page_img=$(this).find(".page-img");
+	            $(this).find(".page-img").remove();
+	            $(this).append(page_img); // 注意参数true 
+	        });
+		 }
 		
                        
 	});
