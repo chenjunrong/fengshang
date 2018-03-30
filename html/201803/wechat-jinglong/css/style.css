@@ -474,12 +474,17 @@ input{
 	color: #d6a05e;
 }
 /*内页选项结束*/
-
+::-webkit-scrollbar {width: 5px;height: 5px;}                        
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {border-radius: 999px;border:0px solid transparent;}
+::-webkit-scrollbar-track {box-shadow: 1px 1px 5px rgba(100,100,100,.2) inset;}
+::-webkit-scrollbar-thumb {min-height: 20px;background-clip: content-box;box-shadow: 0 0 0 5px rgba(100,100,100,.5) inset;}
+::-webkit-scrollbar-corner {background:;transparent}
 /*内页分类选项swiper开始*/
 .inside-type-swiper{
 	width: 7rem;
 	margin: 0 auto;
 	margin-top: 0.4rem;
+	overflow-x: scroll;
 }
 .inside-type-swiper .swiper-slide a{
 	display: inline-block;
